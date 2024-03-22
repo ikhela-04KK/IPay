@@ -1,16 +1,17 @@
 image:
   file: .gitpod.dockerfile
 tasks:
-  - before: |
+- name: Build for different targets 
+  before: |
       export PATH=$FLUTTER_HOME/bin:$ANDROID_HOME/bin:$ANDROID_HOME/platform-tools:$PATH
       mkdir -p /home/gitpod/.android
       touch /home/gitpod/.android/repositories.cfg
-init: |
+  init: |
     echo "Installing Flutter SDK..."
-command: |
-  flutter pub upgrade
-  echo "Ready to go!"
-  flutter doctor
+  command: |
+    flutter pub upgrade
+    echo "Ready to go!"
+    flutter doctor
 vscode:
   extensions:
     - Dart-Code.dart-code
