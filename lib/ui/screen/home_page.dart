@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../util/file_path.dart';
+import '../../util/file_path.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -214,8 +214,8 @@ class _HomePageState extends State<HomePage> {
                     radius: 22.0,
                     backgroundColor: Theme.of(context).colorScheme.background,
                     child: ClipRRect(
-                      child: SvgPicture.asset(avatorOne),
                       borderRadius: BorderRadius.circular(50.0),
+                      child: SvgPicture.asset(avatorOne),
                     ),
                   ),
                 ),
@@ -245,8 +245,8 @@ class _HomePageState extends State<HomePage> {
                     radius: 22.0,
                     backgroundColor: Theme.of(context).colorScheme.background,
                     child: ClipRRect(
-                      child: SvgPicture.asset(avatorTwo),
                       borderRadius: BorderRadius.circular(50.0),
+                      child: SvgPicture.asset(avatorTwo),
                     ),
                   ),
                 ),
@@ -276,8 +276,8 @@ class _HomePageState extends State<HomePage> {
                     radius: 22.0,
                     backgroundColor: Theme.of(context).colorScheme.background,
                     child: ClipRRect(
-                      child: SvgPicture.asset(avatorThree),
                       borderRadius: BorderRadius.circular(50.0),
+                      child: SvgPicture.asset(avatorThree),
                     ),
                   ),
                 ),

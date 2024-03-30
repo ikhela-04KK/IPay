@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:myapp/ui/screen/home_page.dart';
-import '../util/file_path.dart';
+import '../../util/file_path.dart';
 
 
 class DrawerPage extends StatefulWidget {
-  const DrawerPage({Key? key}) : super(key: key);
+  const DrawerPage({super.key});
 
   @override
   _DrawerPageState createState() => _DrawerPageState();
@@ -54,8 +54,8 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                               backgroundColor:
                                   Theme.of(context).colorScheme.background,
                               child: ClipRRect(
-                                child: SvgPicture.asset(avatorOne),
                                 borderRadius: BorderRadius.circular(50.0),
+                                child: SvgPicture.asset(avatorOne),
                               ),
                             ),
                           ),
