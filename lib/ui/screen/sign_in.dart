@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:myapp/ui/screen/drawer_page.dart';
@@ -14,7 +16,7 @@ class SignInPage extends StatefulWidget {
 class _SignInPageState extends State<SignInPage> {
   static DateTime now = DateTime.now();
   String formattedTime = DateFormat.jm().format(now);
-  String formattedDate = DateFormat('MMM d, yyyy | EEEEEE').format(now);
+  String formattedDate = DateFormat('MMM d, yyyy | E').format(now);
   @override
   Widget build(BuildContext context) {
     return Material(
